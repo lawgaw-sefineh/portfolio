@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lawgaw Sefineh | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+    <script defer src="script.js"></script>
+  </head>
+  <body class="dark">
+    <!-- Navigation -->
+    <header>
+      <nav class="navbar">
+        <h2
+          class="logo"
+          onclick="document.getElementById('hero').scrollIntoView({behavior:'smooth'})"
+        >
+          Lawgaw<span>.</span>
+        </h2>
+
+        <!-- Menu Toggle -->
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Dark/Light Toggle -->
+        <button id="theme-toggle" class="theme-btn">
+          <i class="fas fa-moon"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Hello, I'm <span>Lawgaw Sefineh</span></h1>
+        <h2><span id="typed"></span></h2>
+        <p>
+          I craft clean, responsive, and modern web experiences for clients and
+          businesses, combining creativity with technical expertise.
+        </p>
+        <a href="#contact" class="btn">Hire Me</a>
+        <a href="cv.pdf" target="_blank" class="btn btn-outline">View CV</a>
+      </div>
+      <div class="hero-img">
+        <img src="assets/profile.jpg" alt="Profile Picture" />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a frontend developer from Ethiopia who loves turning ideas into
+        digital reality. I focus on building websites that are not only
+        beautiful but also intuitive and responsive. With a background in C++,
+        Java, and Databases, I blend logic with creativity to craft seamless
+        user experiences. My goal is to deliver solutions that impress clients
+        and solve real-world problems.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+        <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+        <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="skill"><i class="fab fa-java"></i> Java</div>
+        <div class="skill"><i class="fas fa-database"></i> SQL</div>
+        <div class="skill"><i class="fab fa-python"></i> Python</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="assets/project1.png" alt="Project 1" />
+          <h3>Portfolio Website</h3>
+          <p>
+            A responsive personal portfolio built with HTML, CSS, and JS,
+            deployed on Vercel for showcasing projects and skills.
+          </p>
+          <a href="#" class="btn">View</a>
+        </div>
+        <div class="project-card">
+          <img src="assets/project2.png" alt="Project 2" />
+          <h3>Database Manager</h3>
+          <p>
+            A Java & SQL project for managing student records, featuring CRUD
+            operations and user-friendly design.
+          </p>
+          <a href="#" class="btn">View</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-wrapper">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <p><i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</p>
+          <p><i class="fas fa-envelope"></i> lawgawsefineh1@gmail.com</p>
+          <p><i class="fas fa-phone"></i> +251 931049044</p>
+          <p>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contact-form">
+          <input
+            type="text"
+            name="from_name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            name="from_email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+      <p id="form-status"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Lawgaw Sefineh. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
